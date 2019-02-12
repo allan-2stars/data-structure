@@ -10,6 +10,7 @@
 const firstRecurringCharacter = input => {
   let map = {};
   input.map((item, index) => {
+    // if same key found, return the key
     if (map[item] == true) {
       console.log(item);
       return item;
