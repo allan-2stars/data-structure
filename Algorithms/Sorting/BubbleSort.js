@@ -14,7 +14,8 @@ const bubbleSort = array => {
       }
     }
   }
+  return array;
 };
 // O(n^2)
-bubbleSort(numbers);
-console.log(numbers);
+
+console.log(bubbleSort(numbers));

@@ -31,6 +31,4 @@ const merge = (left, right) => {
   return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
 };
 
-mergeSort(numbers);
-
-console.log(numbers);
+console.log(mergeSort(numbers));

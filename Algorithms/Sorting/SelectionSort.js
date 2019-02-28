@@ -20,7 +20,9 @@ const selectionSort = array => {
     array[i] = array[min];
     array[min] = temp;
   }
+
+  return array;
 };
+
 // O(n^2)
-selectionSort(numbers);
-console.log(numbers);
+console.log(selectionSort(numbers));
