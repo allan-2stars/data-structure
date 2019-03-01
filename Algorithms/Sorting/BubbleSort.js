@@ -7,10 +7,12 @@ const bubbleSort = array => {
   for (let i = 0; i < lengthArray; i++) {
     for (let j = 0; j < lengthArray; j++) {
       if (array[j] > array[j + 1]) {
-        // swap numbers
-        let temp = array[j];
-        array[j] = array[j + 1];
-        array[j + 1] = temp;
+        // use array destructuring to swap values at once [x, y] = [y, x]
+        [(array[j], array[j + 1])] = [array[j + 1], array[j]];
+        // The preceding code is the same as below
+        // let temp = array[j];
+        // array[j] = array[j + 1];
+        // array[j + 1] = temp;
       }
     }
   }
