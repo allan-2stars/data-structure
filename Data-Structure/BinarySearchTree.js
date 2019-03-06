@@ -140,6 +140,8 @@ class BinarySearchTree {
       return node;
     }
     if (key === node.key) {
+      // need more deeper analysis
+      // will do it next version
       delete node.key;
       return node;
     }
